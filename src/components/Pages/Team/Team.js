@@ -6,7 +6,7 @@ import plus from "./images/plus.svg"
 import horizontal_plus from "./images/horizontal_plus.svg"
 
 import "./Team.css"
-
+//hello
 function Team() {
   return (
 
