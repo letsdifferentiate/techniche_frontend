@@ -1,0 +1,149 @@
+
+@font-face {
+    font-family: 'PP_Mori';
+    src: url('../../../fonts/PPMori-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.event_details {
+    padding: 10vh;
+    height: 40vh;
+    width: 70vw;
+    color: white;
+    margin: auto;
+}
+
+.event_change {
+
+    height: 10vh;
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.img1 img{
+    height: 40px;
+}
+
+.img2 img{
+    height: 40px;  
+}
+
+.title {
+    color: #FFF;
+    text-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.50);
+    font-family:'PP_Mori';
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.content {
+    margin-top: 10vh;
+    backdrop-filter: blur(5px);
+    height: 45vh;
+    width: 65vw;
+    position: relative;
+    border:white solid 2px;
+    border-radius: 25px;
+    padding:5vh;
+    background-color: grey;
+}
+
+
+.events-navbar{
+    margin-bottom: 5vh;
+}
+.events-navbar-list {
+    background-color: grey;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.events-navbar-item {
+    display: inline-block;
+    background-color: grey;
+    margin-right: 25px;
+}
+
+.events-navbar-item a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    background-color: grey;
+    font-family: 'PP_Mori';
+    font-size: 26px;
+    line-height: 38px;
+    letter-spacing: 0.0025em;
+    text-align: left;
+
+}
+
+
+
+
+
+.events-navbar-item a:hover {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-image-source: linear-gradient(to left, #040406, #2685D5);
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    font-weight: 800;
+    transition: 0.2s ease-in-out;
+}
+
+
+.text {
+    height: 20vh;
+    width:45vw;
+    background-color: grey;
+    font-family:'PP_Mori';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.01em;
+    text-align: left;
+
+}
+.text-parent{
+    overflow-y: scroll;
+    background-color: grey;
+    height: auto;
+}
+
+.text-parent::-webkit-scrollbar {
+    width: 0.3em;
+}
+
+.text-parent::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+.text-parent::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+.button {
+    position: absolute;
+    right: 100px;
+    bottom:30px;
+    padding:10px 20px;
+    border:none;
+    font-size: 15px;
+    width: 150px;
+    color:white;
+    background: linear-gradient(to left, #402489, #2685D5);
+    border-radius: 30px;
+}
+

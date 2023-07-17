@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'PP_Mori';
+    src: url('../fonts/PPMori-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+  margin: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: black;
+    padding-top: 2vh;
+  }
+  
+  .navbar-logo img {
+    height: 40px;
+  }
+  
+  .navbar-links {
+    list-style-type: none;
+    margin: 0 0 0 30px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar-links li {
+    margin: 0 10px;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-family: 'PP_Mori';
+    margin-right: 40px;
+
+  }
+  
+  .navbar-auth a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    font-family: 'PP_Mori';
+  }
+  
+
+  .register-button{
+    color:white;
+    background-color: black;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin-left: 10px;
+    margin-right: 20px;
+  }

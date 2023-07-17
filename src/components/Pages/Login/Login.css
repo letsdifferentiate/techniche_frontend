@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'PP_Mori';
+  src: url('../../fonts/PPMori-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roslindale';
+  src: url('../../fonts/Roslindale-DeckNarrowRegular-Testing.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+  }
+.heading{
+  font-family: 'Roslindale';
+}
+  .login-form {
+    text-align: center;
+    padding: 20px;
+    background-color: grey;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 25px;
+    width: 35vw;
+    height: 50vh;
+    color:white;
+    position: relative;
+  }
+  .login-form h1{
+    margin-top: 7vh;
+  }
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    width: 60%;
+    font-family: "PP_Mori";
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+    background-color: grey;
+    color:white;
+  }
+
+  .login {
+
+    width: 60%;
+    padding: 10px;
+    background: linear-gradient(to right, #2685D5, #402489);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    margin: 2vh 0 2vh 0;
+    cursor: pointer;
+    font-family: "PP_Mori";
+  }
+  .signup{
+    width: 60%;
+    padding: 10px;
+    background: grey;
+    color: white;
+    border: none;
+    border: 1px solid white;
+    margin: 0 0 2vh 0;
+    border-radius: 25px;
+    margin-bottom: 2vh;
+    cursor: pointer;
+    font-family: "PP_Mori";
+  }
+
+  .login-form button:hover {
+    background-color: #45a049;
+  }
+
+  .login-form a {
+    font-family: "PP_Mori";
+    text-decoration: none;
+    color: white;
+  }
+
+  .forgot-password{
+    position: absolute;
+    right: 22%;
+  }
