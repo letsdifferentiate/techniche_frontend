@@ -13,14 +13,14 @@ function Header() {
               <a href="#">  <img src={logo} alt="Logo"/> </a>
             </div>
             <ul className="navbar-links">
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Competitions</a></li>
-                <li><a href="#">Workshops</a></li>
-                <li><a href="#">PR Intern</a></li>
+                <li><Link to="/events">Events</Link></li>
+                <li><Link to="/competitions">Competitions</Link></li>
+                <li><Link to="/workshops">Workshops</Link></li>
+                <li><Link to="/pr_intern">PR Intern</Link></li>
             </ul>
             <div className="navbar-auth">
                 <Link to="/login">Login/SignUp</Link>
-                <a href="#"><button className='register-button'>Register</button> </a>
+                <Link to="/signup"><button className='register-button'>Register</button> </Link>
             </div>
             </nav>
 

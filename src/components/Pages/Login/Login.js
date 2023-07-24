@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
 import "./Login.css"
+import authService from '../../../services/auth.service';
+import {useNavigate} from "react-router-dom"
+
 
 const LoginForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
+
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -16,7 +21,17 @@ const LoginForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Add your login logic here
+    console.log("hello in react")
+    
+      authService.login(email,password).then(
+        (response) => {
+           
+           
+        }
+      )
+   
+
+
   }
 
   return (
@@ -41,7 +56,7 @@ const LoginForm = () => {
             required
             /><br />
             <a href="#" className='forgot-password'>Forgot password?</a><br />
-            <button type="submit" className='login'>Login</button><br />
+            <button type="submit" className='login' onClick={handleSubmit}>Login</button><br />
             
             <a href="#"><button className='signup'>Not a member? Signup</button></a>
         </form>
