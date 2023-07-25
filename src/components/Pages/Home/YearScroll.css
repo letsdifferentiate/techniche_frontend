@@ -1,0 +1,38 @@
+  .yearTimeline{
+    width: auto;
+    display: flex;
+    position: relative;
+    padding: 20vh;
+  }
+  
+  .twenty{
+    height: 250px;
+    width: auto;
+    border-bottom: 2px solid white;
+    font-size: 150px;
+    position: sticky;
+    top:310px;    /* it tell how far from top 20 should stop scrolling*/
+  }
+
+  .year{
+    height: 250px;
+    width: 300px;
+    margin: 0 4px 0 0;
+    border-bottom: 2px solid white;
+    /* color:white; */
+
+    color:white;
+    
+    font-size: 150px;
+    
+    
+    
+  }
+  .x{
+    color:aqua;
+  }
+ 
+  .changeColor{
+    color:red;
+    background-color: blue;
+  }
