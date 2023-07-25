@@ -3,12 +3,12 @@ import ReactPlayer from 'react-player'
 import sidebar from "./images/sidebar.svg"
 import Techniche from "./images/Techniche.svg"
 import Techniche_logo from "./images/Techniche_logo.svg"
-
+import Sponsors from './Sponsors'
 import Eye from "./images/eye.svg"
 import Star from "./images/star.svg"
 import Full_group from "./images/full_group.svg"
 import YearScroll from './YearScroll'
-import MyComponent from './trial'
+
 import "./Home.css"
 
 function Home() {
@@ -38,6 +38,9 @@ function Home() {
       </div>
 
       <YearScroll/>
+      <Sponsors/>
+
+      <div className='h-[30vh]'></div>
       
     </div>
   )

@@ -10,7 +10,7 @@ function Header() {
 
             <nav className="navbar">
             <div className="navbar-logo">
-              <a href="#">  <img src={logo} alt="Logo"/> </a>
+              <Link to="/">  <img src={logo} alt="Logo"/> </Link>
             </div>
             <ul className="navbar-links">
                 <li><Link to="/events">Events</Link></li>

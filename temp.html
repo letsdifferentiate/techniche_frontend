@@ -1,56 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Changing Div Style on Scroll</title>
+  <title>Vertical Gradient Text</title>
   <style>
-    /* Add a new class for the green background color */
-    .green-bg {
-      background-color: green;
-      color: black;
-    }
-    .myDiv {
-      width: 200px;
-      height: 200px;
-      
-      
-      text-align: center;
-      padding-top: 50px;
-      font-size: 20px;
-    }
-    .boxx{
-      height: 80vh;
-      background-color: black;
+    .vertical-gradient-text {
+      font-size: 48px;
+      font-weight: bold;
+      background-image: linear-gradient(to bottom, #0000ff, #ffffff, #00ff00);
+      background-clip: text;
+      -webkit-background-clip: text; /* For Safari/Chrome */
+      color: transparent;
     }
   </style>
 </head>
 <body>
-  <div class="boxx"></div>
-  <div class="myDiv">This is the target div</div>
-  <div class="myDiv">This is the target div</div>
-  <div class="myDiv">This is the target div</div>
-  <div class="myDiv">This is the target div</div>
-  <div class="boxx"></div>
-  <script>
-    // Function to change the class of the div based on scroll position
-    function changeDivStyle() {
-      // var myDiv = document.getElementById("myDiv");
-      var myDiv = document.querySelector(".myDiv");
-      var scrollPosition = window.scrollY;
-      var distanceFromTop = myDiv.offsetTop - scrollPosition;
-      console.log(distanceFromTop)
-      var rangeStart = 200; // Set the lower range value here (in pixels)
-      var rangeEnd = 500;   // Set the upper range value here (in pixels)
-
-      if (distanceFromTop >= rangeStart && distanceFromTop <= rangeEnd) {
-        myDiv.classList.add("green-bg"); // Add the class for green background
-    
-      } else {
-        myDiv.classList.remove("green-bg"); // Remove the class if outside the range
-      }
-    }
-
-    // Attach the changeDivStyle function to the scroll event
-    window.addEventListener("scroll", changeDivStyle);
-  </script>
+  <div class="vertical-gradient-text">Vertical Gradient Text</div>
 </body>
 </html>

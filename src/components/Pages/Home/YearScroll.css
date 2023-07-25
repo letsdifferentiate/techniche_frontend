@@ -1,4 +1,12 @@
-  .yearTimeline{
+@font-face {
+  font-family: 'Roslindale';
+  src: url('../../fonts/Roslindale-DeckNarrowRegular-Testing.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.yearTimeline{
+  
     width: auto;
     display: flex;
     position: relative;
@@ -11,6 +19,8 @@
     border-bottom: 2px solid white;
     font-size: 150px;
     position: sticky;
+    color:white;
+    font-family: 'Roslindale';
     top:310px;    /* it tell how far from top 20 should stop scrolling*/
   }
 
@@ -20,10 +30,11 @@
     margin: 0 4px 0 0;
     border-bottom: 2px solid white;
     /* color:white; */
-
-    color:white;
-    
+    font-family: 'Roslindale';
+    /* color:white; */
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; /* to outline the text with white */
     font-size: 150px;
+    font-family: 'Roslindale';
     
     
     
@@ -32,7 +43,10 @@
     color:aqua;
   }
  
-  .changeColor{
-    color:red;
-    background-color: blue;
+  .changeColor {
+    text-shadow: none;
+    background-image: linear-gradient(to bottom, #B12054, #D3C1C8, #1E51A3);
+      background-clip: text;
+      -webkit-background-clip: text; /* For Safari/Chrome */
+      color: transparent;
   }

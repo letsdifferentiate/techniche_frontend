@@ -42,7 +42,7 @@ const YearScroll = () => {
 
                 <div class="yearTimeline">   
                 
-                    <div class="twenty text-white"><p>20</p></div>
+                    <div class="twenty ">20</div>
                     <div class="try">
                         
                         <div className={`year ${yearInBetween ? 'changeColor' : ''}`}>00</div>

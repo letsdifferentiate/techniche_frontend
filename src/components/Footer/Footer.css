@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Roslindale';
+    src: url('../fonts/Roslindale-DeckNarrowRegular-Testing.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.roslindale{
+    font-family: 'Roslindale';
+}
