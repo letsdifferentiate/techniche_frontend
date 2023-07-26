@@ -1,47 +1,46 @@
-import axios from "axios";
+import axios from 'axios';
 import { json, resolvePath, useNavigate } from "react-router-dom";
 
 
-const API_URL= "http://localhost:3000";
+const API_URL= "http://localhost:8001";
 
-const signup = (email, password) => {
-    return axios.post(
+const signup = async (email, password) => {
+
+    
+    const response = await axios.post(
         API_URL + "/signup", {
-            email,
-            password
-        }
-    )
-    .then(
-        (response) => {
-            
-            console.log("hello")
-            
-            if(response.data.accessToken){
-                localStorage.setItem("user", json.stringify(response.data));
-            }
-            return response.data;
-        }
-    )
+        email,
+        password
+    }
+    );
+    console.log("hello");
+    if (response.data.accessToken) {
+        localStorage.setItem("user", json.stringify(response.data));
+    }
+    return response.data;
 };
 
 
-const  login =  (email,password) => {
-    return axios.post(
-        API_URL+"/login", {
-            email, password
-        }
-    ).then(
-        (response) => {
-            console.log("heelo")
-            localStorage.setItem("user", "chu chu");
-            const navigate = useNavigate();
-            navigate("/signup")
-            if(response.data.accessToken){
-                localStorage.setItem("user", "chu chu");
-            }
-            return response.data;
-        }
-    )
+const  login =  async (email,password) => {
+
+
+
+    localStorage.setItem("in login", "asdfsd")
+    localStorage.setItem(email,password)
+  
+
+    const response = await axios.post(
+        API_URL + "/login", {
+        email, password
+    }
+    );
+  
+    localStorage.setItem("user", response);
+   
+    if (response.data.accessToken) {
+        localStorage.setItem("user", "chu chu");
+    }
+    return response.data;
 }
 
 const logout = () => {

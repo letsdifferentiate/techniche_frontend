@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./Login.css"
-import authService from '../../../services/auth.service';
+import AuthService from '../../../services/auth.service';
 import {useNavigate} from "react-router-dom"
 
 
@@ -23,16 +23,21 @@ const LoginForm = () => {
     event.preventDefault();
     console.log("hello in react")
     
-      authService.login(email,password).then(
-        (response) => {
-           
-           
+    try {
+      localStorage.setItem("handlesubmit", "dsf")
+        AuthService.login(email, password).then(
+        () => {
+          
+          window.location.reload();
+        },
+        (error) => {
+          console.log(error);
         }
-      )
-   
-
-
-  }
+      );
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
   return (
     <div className='parent'>
