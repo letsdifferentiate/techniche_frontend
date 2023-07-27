@@ -23,24 +23,23 @@ const signup = async (email, password) => {
 
 const  login =  async (email,password) => {
 
-
-
-    localStorage.setItem("in login", "asdfsd")
-    localStorage.setItem(email,password)
-  
-
+    console.log(email,password)
     const response = await axios.post(
         API_URL + "/login", {
         email, password
-    }
-    );
+    })
+    .then((response) => {
+        localStorage.setItem("debug", response)
+
+        if(response.data.accessToken){
+            localStorage.setItem("user", JSON.stringify(response.data));
+        }
+
+        return response.data;
+    })
+    ;
   
-    localStorage.setItem("user", response);
    
-    if (response.data.accessToken) {
-        localStorage.setItem("user", "chu chu");
-    }
-    return response.data;
 }
 
 const logout = () => {

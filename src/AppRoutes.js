@@ -8,6 +8,7 @@ import EventList from './components/Pages/Events/Event_List/Event_list';
 import Card from './components/Pages/Events/Event_List/components_and_images/card';
 import Team from './components/Pages/Team/Team';
 import Home from './components/Pages/Home/Home';
+import UserDashboard from './components/Pages/User/UserDashboard';
 
 const AppRoutes = () => {
   return (
@@ -37,6 +38,7 @@ const AppRoutes = () => {
 {/*  */}
 {/*  */}
       {/* <Route path="/privacypolicy" element={<Privacy/>} /> */}
+      <Route path="/user" element={<UserDashboard/> } />
       <Route path="/team" element={<Team/>} />
       {/* <Route path="/sponsors" element={<Sponsors/>} /> */}
       <Route path="/login" element={<LoginForm/>} />

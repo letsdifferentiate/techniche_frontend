@@ -1,7 +1,13 @@
 import authService from "./auth.service"
 const authHeader = () => {
 
-    const user = localStorage.getItem("user")
+    const user = JSON.parse(localStorage.getItem("user"));
+
+    console.log("authheader")
+    console.log(user)
+    console.log("authheader!!!")
+    console.log(user.accessToken)
+    console.log("authheader###")
 
     if(user && user.accessToken){
         return { Authorization: 'Bearer ' + user.accessToken };
@@ -10,3 +16,5 @@ const authHeader = () => {
 
 
 }
+
+export default authHeader

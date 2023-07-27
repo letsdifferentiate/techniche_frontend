@@ -27,7 +27,6 @@ const LoginForm = () => {
       localStorage.setItem("handlesubmit", "dsf")
         AuthService.login(email, password).then(
         () => {
-          
           window.location.reload();
         },
         (error) => {
@@ -37,6 +36,8 @@ const LoginForm = () => {
     } catch (err) {
       console.log(err);
     }
+
+    
   };
 
   return (
