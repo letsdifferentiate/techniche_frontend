@@ -14,6 +14,7 @@ const signup = async (email, password) => {
     }
     );
     console.log("hello");
+    
     if (response.data.accessToken) {
         localStorage.setItem("user", json.stringify(response.data));
     }

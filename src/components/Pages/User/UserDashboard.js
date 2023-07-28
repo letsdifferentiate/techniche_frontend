@@ -37,3 +37,22 @@ function UserDashboard() {
 
 
 export default UserDashboard
+
+
+/*
+
+[
+  {
+    event_name: "nexus",
+    name: "Gaurav Mahato",
+    email: "gauravmahato1309@gmail.com",
+    ...baaki attributes(nexus)
+  },
+  {
+    event_name: "techexpo",
+    name: "Gaurav Mahato",
+    email: "gauravmahato1309@gmail.com",
+    ...baaki attributes(techexpo)
+  }
+]
+*/
