@@ -1,12 +1,119 @@
 @font-face {
     font-family: 'Roslindale';
     src: url('../../fonts/Roslindale-DeckNarrowRegular-Testing.otf') format('opentype');
-    font-weight: normal;
+    font-weight: 900;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'PP_Mori';
+    src: url('../../fonts/PPMori-Regular.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
 
 .fontx{
     font-family: 'Roslindale';
     font-size: 30px;
+}
+
+
+.T1:hover::before {
+    content: "25_YEARS";
+    color:red;
+    display: block;
+  }
+  .E1:hover{
+    color:transparent;
+  }
+  .E1:hover::before {
+    content: "25_YEARS";
+    color:red;
+    display: block;
+  }
+  .T1:hover{
+    color:transparent;
+  }
+
+  .C1:hover::before {
+    content: " ";
+    color:red;
+    display: block;
+  }
+  .C1:hover{
+    
+    color:transparent;
+  }
+  .H1:hover::before {
+    content: "25_YEARS";
+    color:red;
+    display: block;
+  }
+  .H1:hover{
+    color:transparent;
+  }
+  .N1:hover::before {
+    content: "25_YEARS";
+    color:red;
+    display: block;
+  }
+  .N1:hover{
+    color:transparent;
+  }
+
+  .I1:hover::before {
+    content: "25_YEARS";
+    color:red;
+    display: block;
+  }
+  .I1:hover{
+    color:transparent;
+  }
+
+  .C2:hover::before {
+    content: "25_YEARS";
+    color:red;
+    display: block;
+  }
+  .C2:hover{
+    color:transparent;
+  }
+
+  .H2:hover::before {
+    content: "25_YEARS";
+    color:red;
+    display: block;
+  }
+  .H2:hover{
+    color:transparent;
+  }
+
+  .E2:hover::before {
+    content: " ";
+    color:red;
+    display: block;
+  }
+  .E2:hover{
+    color:transparent;
+  }
+
+.mori_to_grid{
+    font-family: 'PP_Mori';
+    transition: font-family 0.3s ease 0.2s, font-size 0.3s ease 0.2s;
+    margin-top: 0;
+    font-weight: 500;
+}
+.mori_to_grid:hover{
+    font-family: 'Gridular';
+    margin-top: -9px;
+}
+
+.grid_to_mori{
+    margin-top: -9px;
+    font-family: 'Gridular';
+    transition: font-family 0.3s ease 0.2s, font-size 0.3s ease 0.2s;
+}
+.grid_to_mori:hover{
+    font-family: 'PP_Mori';
+    margin-top: 0;
 }
