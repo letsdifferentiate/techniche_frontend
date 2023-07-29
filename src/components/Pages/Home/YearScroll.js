@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import "./YearScroll.css"
+import flower from "./images/flower.png"
+
 
 const YearScroll = () => {
 
@@ -45,11 +47,11 @@ const YearScroll = () => {
                     <div class="twenty ">20</div>
                     <div class="try">
                         
-                        <div className={`year ${yearInBetween ? 'changeColor' : ''}`}>00</div>
-                        <div className={`year ${yearInBetween ? 'changeColor' : ''}`}>01</div>
-                        <div className={`year ${yearInBetween ? 'changeColor' : ''}`}>02</div>
-                        <div className={`year ${yearInBetween ? 'changeColor' : ''}`}>03</div>
-                        <div className={`year ${yearInBetween ? 'changeColor' : ''}`}>04</div>
+                       <div className='flex items-center justify-between w-[60vw]'> <div className={`year ${yearInBetween ? 'changeColor' : ''}`}>00</div><div className='text-white'>jsdfl</div><img src={flower}/></div>
+                       <div className='flex items-center justify-between w-[60vw]'> <div className={`year ${yearInBetween ? 'changeColor' : ''}`}>01</div><img src={flower}/><div className='text-white'>jsdfl</div></div>
+                       <div className='flex items-center justify-between w-[60vw]'> <div className={`year ${yearInBetween ? 'changeColor' : ''}`}>02</div><div className='text-white'>jsdfl</div><img src={flower}/></div>
+                       <div className='flex items-center justify-between w-[60vw]'> <div className={`year ${yearInBetween ? 'changeColor' : ''}`}>03</div><img src={flower}/><div className='text-white'>jsdfl</div></div>
+                       <div className='flex items-center justify-between w-[60vw]'> <div className={`year ${yearInBetween ? 'changeColor' : ''}`}>04</div><div className='text-white'>jsdfl</div><img src={flower}/></div>
                     </div>
                 </div>
                

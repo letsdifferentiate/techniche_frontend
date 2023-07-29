@@ -1,8 +1,10 @@
 import React, {useState} from 'react'
 import "./Event_detail.css"
+import "./EventForm.css"
 import arrow_right from "./images/arrow_right.svg"
 import arrow_left from "./images/arrow_left.svg"
 import Header from "../../../Header/header"
+import EventForm from './EventForm'
 
 function Event_detail(props) {
 
@@ -21,12 +23,19 @@ function Event_detail(props) {
     setContent('Contact content')
   }
 
+  const handleRegisterClick =() => {
+    const contentElement = document.getElementById('content')
+    contentElement.classList.add('hidden')
+    const formElement = document.getElementById('form')
+    formElement.classList.remove('hidden')
+  }
+
 
 
   return (
     <>
     
-   <div className="event_details">
+   <div className="event_details" id="content">
 
         <div className='event_change'>
             <div className='img1'><a href="#"><img src={arrow_left}/></a></div>
@@ -61,10 +70,11 @@ function Event_detail(props) {
 
               </div>
             </div>
-            <button className='button'>Register</button>
+            <button className='button' onClick={handleRegisterClick}>Register</button>
         </div>
 
    </div>
+   <div id="form" className='text-white hidden'><EventForm /></div>
    </>
   )
 }

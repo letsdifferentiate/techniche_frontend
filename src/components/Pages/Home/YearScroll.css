@@ -45,7 +45,7 @@
  
   .changeColor {
     text-shadow: none;
-    background-image: linear-gradient(to bottom, #B12054, #D3C1C8, #1E51A3);
+    background: linear-gradient(194deg, #f3055c 30%, #D3C1C8 52.40%, #05398b 70%);
       background-clip: text;
       -webkit-background-clip: text; /* For Safari/Chrome */
       color: transparent;

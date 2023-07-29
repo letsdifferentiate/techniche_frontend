@@ -53,7 +53,8 @@
     border:white solid 2px;
     border-radius: 25px;
     padding:5vh;
-    background-color: grey;
+    /* background-color: rgba(255, 255, 255, 0.16); */
+      backdrop-filter: blur(3.5px); /* Blur effect */
 }
 
 
@@ -61,7 +62,8 @@
     margin-bottom: 5vh;
 }
 .events-navbar-list {
-    background-color: grey;
+    background-color:transparent;
+      backdrop-filter: blur(3.5px); /* Blur effect */
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -69,7 +71,8 @@
 
 .events-navbar-item {
     display: inline-block;
-    background-color: grey;
+    background-color: transparent;
+      backdrop-filter: blur(3.5px); /* Blur effect */
     margin-right: 25px;
 }
 
@@ -77,7 +80,8 @@
     text-decoration: none;
     color: white;
     padding: 5px 10px;
-    background-color: grey;
+    background-color:transparent;
+    backdrop-filter: blur(3.5px); /* Blur effect */;
     font-family: 'PP_Mori';
     font-size: 26px;
     line-height: 38px;
@@ -106,7 +110,8 @@
 .text {
     height: 20vh;
     width:45vw;
-    background-color: grey;
+    background-color: transparent;
+      backdrop-filter: blur(3.5px); /* Blur effect */
     font-family:'PP_Mori';
     font-size: 14px;
     font-weight: 400;
@@ -117,7 +122,8 @@
 }
 .text-parent{
     overflow-y: scroll;
-    background-color: grey;
+    background-color: transparent;
+      backdrop-filter: blur(3.5px); /* Blur effect */
     height: auto;
 }
 

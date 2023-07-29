@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import "./Login.css"
 import AuthService from '../../../services/auth.service';
-import {useNavigate} from "react-router-dom"
 import leftHand from "./images/Left_hand.png"
 import rightHand from "./images/Right_hand.png"
 import plus from ".//images/plus.png"
