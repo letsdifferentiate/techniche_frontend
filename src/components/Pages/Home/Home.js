@@ -13,6 +13,8 @@ import coordinates from "./images/Coordinates.png"
 import flower from "./images/flower.png"
 import "./Home.css"
 import Logo from './Logo'
+import Ellipse from './images/Ellipse.png'
+
 
 function Home() {
 
@@ -33,12 +35,15 @@ videoPlayer.oncanplay = () => {
     <Logo />
 
 
-      <div className='text-white mt-40 w-[80vw] h-[50vh] mx-auto relative flex justify-between'>
-       
-        <div className=' w-[40%] relative my-auto'>
-            <div>SINCE 1999</div>
-          <div className='h-[90vh] w-[90vh] -ml-20 techniche'>
-              <div className='text-9xl text-white flex'>
+      <div className='text-white mt-40 w-[90vw] h-[50vh] mx-auto relative flex justify-between items-center'>
+       <img src={sidebar} />
+        <div className=' w-[45vw] relative my-auto h-[50vh] flex flex-col items-center justify-center'>
+           <div className='absolute top-0 left-0 text-lg'>SINCE 1999</div>
+           <div></div>
+           <img src={Ellipse} className='absolute w-[90%]' />
+           
+          <div className='relative'>
+              <div className='text-8xl text-white flex'>
                   <div className='mori_to_grid text-blue-800 T1'>T</div>
                   <div className='grid_to_mori text-violet-800 E1'>E</div>
                   <div className='mori_to_grid text-blue-500 C1'>C</div>
@@ -50,18 +55,16 @@ videoPlayer.oncanplay = () => {
                   <div className='mori_to_grid E2'>E</div>
               </div>
             </div>
-            {/* <div className='absolute right-0 flex justify-end flex-col'>
-             
-                    <img src={Eye} />
-                    <div className='fontx'>31st Aug-3rd Sept</div>
-            
-            </div> */}
+            <div className='absolute right-0 bottom-10 flex  flex-col justify-end'>
+                    <img src={Eye} className='h-[60px] hover:animate-bounce '/>
+                    <div className='fontx text-3xl'>31st Aug-3rd Sept</div>
+            </div>
             
         </div>
-        
+        <div className='w-[20vw] text-black'>Easter eggs?!</div>
+        <img src={sidebar} />
     
       </div>
-
 
       <a href="https://www.google.com/maps/d/u/0/viewer?mid=10kOD2TXBPY1qsMQfdF8AXlBxS0Q&hl=en_US&ll=26.19210399999995%2C91.69464100000002&z=17" className='text-white'>
           <div className='mt-9 w-[80vw] h-auto rounded-full border-1 border white mx-auto flex justify-between relative z-1'>
@@ -80,8 +83,8 @@ videoPlayer.oncanplay = () => {
       </a>
 
 
-      <div className='w-[80vw]  mx-auto my-10 h-[80vh]'>
-        <ReactPlayer url="https://www.youtub.com/watch?v=rMe52W-dRbQ" playing={true} width="100%" height="100%" />
+      <div className='w-[80vw]  mx-auto my-20 h-[90vh] relative z-20'>
+        <ReactPlayer url="https://www.youube.com/watch?v=rMe52W-dRbQ" playing={true} width="100%" height="100%" />
         
       </div>
 

@@ -14,14 +14,15 @@
 
 .fontx{
     font-family: 'Roslindale';
-    font-size: 30px;
+    
 }
+
 
 
 .T1:hover::before {
     content: "25_YEARS";
     color:red;
-    display: block;
+    /* display: block; */
   }
   .E1:hover{
     color:transparent;
@@ -29,7 +30,7 @@
   .E1:hover::before {
     content: "25_YEARS";
     color:red;
-    display: block;
+    /* display: block; */
   }
   .T1:hover{
     color:transparent;
@@ -38,7 +39,7 @@
   .C1:hover::before {
     content: " ";
     color:red;
-    display: block;
+    /* display: block; */
   }
   .C1:hover{
     
@@ -47,7 +48,7 @@
   .H1:hover::before {
     content: "25_YEARS";
     color:red;
-    display: block;
+    /* display: block; */
   }
   .H1:hover{
     color:transparent;
@@ -55,7 +56,7 @@
   .N1:hover::before {
     content: "25_YEARS";
     color:red;
-    display: block;
+    /* display: block; */
   }
   .N1:hover{
     color:transparent;
@@ -64,7 +65,7 @@
   .I1:hover::before {
     content: "25_YEARS";
     color:red;
-    display: block;
+    /* display: block; */
   }
   .I1:hover{
     color:transparent;
@@ -73,7 +74,7 @@
   .C2:hover::before {
     content: "25_YEARS";
     color:red;
-    display: block;
+    /* display: block; */
   }
   .C2:hover{
     color:transparent;
@@ -82,7 +83,7 @@
   .H2:hover::before {
     content: "25_YEARS";
     color:red;
-    display: block;
+    /* display: block; */
   }
   .H2:hover{
     color:transparent;
@@ -91,7 +92,7 @@
   .E2:hover::before {
     content: " ";
     color:red;
-    display: block;
+    /* display: block; */
   }
   .E2:hover{
     color:transparent;

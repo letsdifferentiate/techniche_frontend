@@ -25,9 +25,9 @@ function Logo() {
 
 
   return (
-    <div className='fixed right-[30vh] h-[5vh]'>
-      <div className={scrollPosition ? '' : 'rotate'} style={{ transform: `translateX(${-1*scrollPosition * 0.3}px) translateY(${scrollPosition * 0.2}px) rotateX(${scrollPosition * 0.15}deg) rotateY(${scrollPosition * 0.3}deg)` }}>
-        <img src={Techniche_logo} className='h-[40vh]'/>
+    <div className='fixed right-[30vh] h-[5vh] '>
+      <div  style={{ transform: `translateX(${-1*scrollPosition * 0.3}px) translateY(${scrollPosition * 0.2}px) rotateX(${scrollPosition * 0.15}deg) rotateY(${scrollPosition * 0.3}deg)` }}>
+        <img src={Techniche_logo} className={!scrollPosition ? 'animate-pulse': ''}/>
       </div>
         
     </div>

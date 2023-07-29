@@ -1,10 +1,14 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import "./header.css"
 import logo  from "./logo.svg"
 import { Link } from 'react-router-dom'
 
 
 function Header() {
+  const [displayText, setDisplayText] = useState("Evesnts")
+  
+
+
   return (
     <div className='fixed top-0 w-[100vw] z-50'>
 
@@ -13,7 +17,7 @@ function Header() {
               <Link to="/">  <img src={logo} alt="Logo"/> </Link>
             </div>
             <ul className="navbar-links">
-                <li><Link to="/events">Events</Link></li>
+                <li><Link to="/events">{displayText}</Link></li>
                 <li><Link to="/competitions">Competitions</Link></li>
                 <li><Link to="/workshops">Workshops</Link></li>
                 <li><Link to="/pr_intern">PR Intern</Link></li>
