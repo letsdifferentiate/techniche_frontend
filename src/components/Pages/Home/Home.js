@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useState,useEffect} from 'react'
 import ReactPlayer from 'react-player'
 import sidebar from "./images/sidebar.svg"
 import Techniche from "./images/Techniche.svg"
@@ -14,9 +14,39 @@ import flower from "./images/flower.png"
 import "./Home.css"
 import Logo from './Logo'
 import Ellipse from './images/Ellipse.png'
+import video from "./images/sample_video.mp4"
 
 
 function Home() {
+  
+  const [cursorPosition, setCursorPosition] = useState({ x: -100, y: -100 });
+  const [isHovering, setIsHovering] = useState(false);
+  const [mouseContent, setMouseContent] = useState("Pause")
+
+  const handleMouseEnter = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovering(false);
+  };
+ 
+
+  useEffect(() => {
+    const updateCursorPosition = (event) => {
+      setCursorPosition({ x: event.clientX, y: event.clientY });
+    };
+    if (isHovering) {
+      document.body.style.cursor = 'none'; // Hide the default cursor when hovering over the custom cursor
+    } else {
+      document.body.style.cursor = 'auto'; // Restore the default cursor when not hovering over the custom cursor
+    }
+    document.addEventListener('mousemove', updateCursorPosition);
+
+    return () => {
+      document.removeEventListener('mousemove', updateCursorPosition);
+    };
+  }, [isHovering]);
 
 useEffect( () =>
   {
@@ -29,7 +59,17 @@ const playbackSpeed = 5;
 videoPlayer.oncanplay = () => {
   videoPlayer.playbackRate = playbackSpeed;
 };})
-
+const handleVideoClick = () => {
+  const video = document.getElementById('video');
+  if(mouseContent === "Pause"){
+    setMouseContent("Play")
+    video.pause();
+  }
+  else{
+    setMouseContent("Pause")
+    video.play()
+  }
+}
   return (
     <div>
     <Logo />
@@ -83,9 +123,13 @@ videoPlayer.oncanplay = () => {
       </a>
 
 
-      <div className='w-[80vw]  mx-auto my-20 h-[90vh] relative z-20'>
-        <ReactPlayer url="https://www.youube.com/watch?v=rMe52W-dRbQ" playing={true} width="100%" height="100%" />
-        
+      <div className='w-[80vw]  mx-auto my-20 h-[90vh] relative z-20' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      <div id="playPauseBtn" className={isHovering ? 'cursor': ''} style={{ top: cursorPosition.y, left: cursorPosition.x }} >
+        {mouseContent}
+      </div>
+      <video id="video" loop autoPlay muted className='h-[100%] w-[100%]' onClick={handleVideoClick}>
+                      <source src={video} type="video/mp4" />
+                </video>
       </div>
 
       <YearScroll/>

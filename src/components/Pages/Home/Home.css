@@ -118,3 +118,24 @@
     font-family: 'PP_Mori';
     margin-top: 0;
 }
+
+
+
+
+.cursor {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 0 0 40px rgba(59, 150, 255, 0.7); 
+  backdrop-filter: blur(12px); 
+  color: #ffffff;
+  font-size: 16px;
+  pointer-events: none; /* Prevent the cursor div from interfering with underlying elements */
+  z-index: 9999; /* Ensure it stays on top of other elements */
+  opacity: 0.8;
+}
