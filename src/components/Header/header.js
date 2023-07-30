@@ -140,8 +140,8 @@ const stopAmbassdorText = () => {
               <Link to="/">  <img src={logo} alt="Logo"/> </Link>
             </div>
             <ul className="navbar-links">
-                <li id="events"><Link to="/events">{eventsText}</Link></li>
-                <li id="competitions"><Link to="/competitions">{competitionText}</Link></li>
+                <li id="events"><Link to="/events/technical">{eventsText}</Link></li>
+                <li id="competitions"><Link to="/competitions/technical">{competitionText}</Link></li>
                 <li id="workshops"><Link to="/workshops">{workshopsText}</Link></li>
                 <li id="ambassdor"><Link to="/pr_intern">{ambassadorText}</Link></li>
             </ul>

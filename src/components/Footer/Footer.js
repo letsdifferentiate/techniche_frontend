@@ -9,12 +9,12 @@ import "./Footer.css"
 
 function footer() {
   return (
-    <div className='text-white'>
+    <div className='text-white footer rounded-t-3xl'>
 
-      <div className=' bg-pink-500 rounded-t-3xl border border-white relative'>
-        <div className='pt-20 pl-20 roslindale text-3xl'>
-          Experience one of the India's <br />Best Techno-Management Fest!<br/>
-          <div className='bg-blue-500 py-1 px-4 rounded-full inline-block'><Link to="/signup">Sign Up</Link></div>
+      <div className='  border border-white relative'>
+        <div className='pt-20 pl-20  text-3xl'>
+         <div className='roslindale'> Experience one of the India's <br />Best Techno-Management Fest!<br/></div>
+          <div className='bg-gradient-to-r from-blue-500 to-violet-900 py-1 px-4 mt-4 rounded-full inline-block'><Link to="/signup">Sign Up</Link></div>
         </div>
         <div className='flex justify-between w-[50vw] pl-20 mt-20'>
         <div>
@@ -24,7 +24,7 @@ function footer() {
           </div>
         <div className='roslindale text-3xl'>
           Connect with us<br/>
-          <div className='flex w-[30vw] justify-between'>
+          <div className='flex w-[30vw] justify-between mt-4'>
             <a href="https://twitter.com/Techniche_IITG"><img src={Twitter} /></a>
             <a href="https://in.linkedin.com/company/techniche-iitg"><img src={Linkedin} /></a>
             <a href="https://www.instagram.com/techniche_iitguwahati/?hl=en"><img src={Insta} /></a>
