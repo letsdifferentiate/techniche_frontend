@@ -6,7 +6,7 @@ import left_arrow from "./components_and_images/left.svg"
 import right_arrow from "./components_and_images/right.svg"
 import { Link } from 'react-router-dom'
 
-
+//comment
 function Management() {
   return (
     <div className='w-[70vw] mx-auto pt-10 my-20'>
