@@ -1,55 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scrolling Screen Effect</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
+Techniche presents 'NEXUS: the Corpo-Management conference,' your first step into corporate life. The conference spans from 1st to 3rd September 2023 and is designed to bring together professionals and enthusiasts from entrepreneurship, management & technology to exchange ideas and knowledge, network with like-minded people, and get expert insights.
 
-.hidden-screen {
-  position: absolute;
-  top: 50%;
-  right: -50%; /* Initially hidden outside the right edge */
-  transform: translateY(-50%);
-  background-color: lightgray;
-  padding: 20px;
-  opacity: 0; /* Initially hidden */
-  transition: right 0.5s, opacity 0.5s;
-}
 
-  </style>
-</head>
-<body>
-  <div class="hidden-screen" id="screen">
-    <!-- Your content goes here -->
-    <h1>Welcome to the Hidden Screen</h1>
-    <p>This is some content that was hidden and will appear as you scroll.</p>
-  </div>
-  <script >const screen = document.getElementById('screen');
+    Why Nexus?
+The Conference aims to provide a unique platform, connecting entrepreneurship, business, and management enthusiasts to industrial big-wigs and visionaries.
+The Conference boasts itself for providing students with the opportunity to broaden their avenues and learn about the business dynamics of the industry growing at a blisteringly fast pace. The profusion of knowledge and experience shared by speakers, might just be the kickstart you need.
 
-    window.addEventListener('scroll', () => {
-      const scrollPos = window.scrollY;
-      const screenPos = screen.getBoundingClientRect().left;
-    
-      // Calculate the position of the center of the screen
-      const windowCenter = window.innerWidth / 2;
-    
-      // Calculate the target position for the screen to be at the center
-      const targetPosition = windowCenter - screen.offsetWidth / 2;
-    
-      // Calculate the screen position as it comes to the center
-      const newPosition = (screenPos - targetPosition) * 0.5;
-    
-      // Show the screen and move it to the center as you scroll
-      screen.style.right = `${newPosition}px`;
-      screen.style.opacity = 1;
-    });
-    </script>
-</body>
-</html>
+It's also a channel for our industry leaders to stay up to date with today's youth and their aspirations. Apart from this, we also aim to provide all-round development to our participants’ personality and growth with our soft skill subevents, hackathons, and competitions.
+
+
+    What do participants gain?
+An opportunity to explore entrepreneurship, management, consulting, finance, and industry.
+A chance to interact with top executives about their field and how they can get into it.
+A space to grow their network with like-minded people.
+A platform to polish their soft skills, confidence, and personality.
+Also, you get hands-on experience with problems faced in the corporate world and an overview of blooming new dimensions.

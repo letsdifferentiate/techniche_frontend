@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Event_details from "./components/Pages/Events/Event_List/Technical"
-import Event_detail from "./components/Pages/Events/Event_details/Event_detail"
+// import Event_detail from "./components/Pages/Events/Event_details/Event_detail"
 import LoginForm from './components/Pages/Login/Login';
 import SignUpForm from './components/Pages/SignUp/SignUp'
 import EventsTechnical from './components/Pages/Events/Event_List/Technical';
@@ -14,7 +14,7 @@ import Team from './components/Pages/Team/Team';
 import Home from './components/Pages/Home/Home';
 import UserDashboard from './components/Pages/User/UserDashboard';
 import Workshops from './components/Pages/Workshops/workshops';
-
+import Nexus from './components/Pages/Events/Nexus/Nexus';
 
 const AppRoutes = () => {
   return (
@@ -30,7 +30,7 @@ const AppRoutes = () => {
       <Route path="/workshops" element={<Workshops />} />
             {/* individual events */}
             {/* <Route path="/lecture_series" element={<Lecture_series />} /> */}
-            <Route path="/nexus" element={<Event_detail />} />
+            <Route path="/nexus" element={<Nexus />} />
             {/* <Route path="/pronites" element={<Pronites/>} /> */}
             {/* <Route path="/ghm" element={<GHM/>} /> */}
             {/* <Route path="/funniche" element={<Funniche/>} /> */}
