@@ -92,3 +92,16 @@
   position: absolute;
   right: 22%;
 }
+
+img {
+  animation: translateAnimation 4s linear infinite alternate; /* Change '5s' to adjust the animation duration */
+}
+
+@keyframes translateAnimation {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-5%, -5%); /* Change '-50%' to adjust the distance of horizontal and vertical translation */
+  }
+}

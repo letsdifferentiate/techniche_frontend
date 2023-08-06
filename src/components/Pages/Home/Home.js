@@ -97,7 +97,7 @@ const handleVideoClick = () => {
               </div>
             </div>
             <div className='absolute right-0 bottom-10 flex  flex-col justify-end'>
-                    <img src={Eye} className='h-[60px] hover:animate-bounce '/>
+                    
                     <div className='fontx text-3xl'>31st Aug-3rd Sept</div>
             </div>
             
