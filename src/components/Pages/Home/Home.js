@@ -15,6 +15,7 @@ import "./Home.css"
 import Logo from './Logo'
 import Ellipse from './images/Ellipse.png'
 import video from "./images/sample_video.mp4"
+import Footer from "../../Footer/Footer"
 
 
 function Home() {
@@ -101,7 +102,7 @@ const handleVideoClick = () => {
             </div>
             
         </div>
-        <div className='w-[20vw] text-black'>Easter eggs?!</div>
+        <div className='w-[20vw] text-black'></div>
         <img src={sidebar} />
     
       </div>
@@ -134,8 +135,9 @@ const handleVideoClick = () => {
 
       <YearScroll/>
       <Sponsors/>
+      <Footer/>
 
-      <div className='h-[30vh]'></div>
+      
       
     </div>
   )
