@@ -130,9 +130,17 @@ const handleVideoClick = () => {
         {mouseContent}
 
       </div>
-      <video id="video" loop autoPlay muted className='h-[100%] w-[100%]' onClick={handleVideoClick}>
-                      <source src={video} type="video/mp4" />
-                </video>
+      
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/5DvECSbgtaE"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                  onClick={handleVideoClick}
+                ></iframe>
       </div>
 
       <YearScroll/>

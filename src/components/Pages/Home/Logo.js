@@ -47,6 +47,15 @@ function Logo() {
     <img src={star} className='fixed right-[70vh] top-[50vh]  animate-ping  ' style={{ height: '15px' }} />
     <img src={star} className='fixed right-[60vh] top-[70vh]  animate-pulse  ' style={{ height: '15px' }} />
     <img src={star} className='fixed right-[60vh] top-[70vh]  animate-spin  ' style={{ height: '25px' }} />
+    <img src={star} className='fixed right-[70vh] top-[50vh]  animate-ping  ' style={{ height: '15px' }} />
+    <img src={star} className='fixed right-[60vh] top-[70vh]  animate-pulse  ' style={{ height: '15px' }} />
+    <img src={star} className='fixed left-[60vh] bottom-[70vh]  animate-pulse  ' style={{ height: '25px' }} />
+    <img src={star} className='fixed left-[70vh] bottom-[50vh]  animate-ping  ' style={{ height: '15px' }} />
+    <img src={star} className='fixed left-[60vh] bottom-[70vh]  animate-pulse  ' style={{ height: '15px' }} />
+    <img src={star} className='fixed left-[60vh] bottom-[70vh]  animate-pulse  ' style={{ height: '15px' }} />
+    <img src={star} className='fixed left-[70vh] bottom-[50vh]  animate-ping  ' style={{ height: '15px' }} />
+    <img src={star} className='fixed left-[60vh] bottom-[70vh]  animate-pulse  ' style={{ height: '15px' }} />
+    <img src={star} className='fixed left-[60vh] bottom-[70vh]  animate-pulse  ' style={{ height: '15px' }} />
     </>
   )
 }
