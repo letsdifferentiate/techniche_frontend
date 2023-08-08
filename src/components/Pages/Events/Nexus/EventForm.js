@@ -32,9 +32,9 @@ const EventForm = () => {
 
   return (
 
-    <div className='parent'>
+    <div className='parent mx-auto w-[90vw]'>
         <div className="signup-form">
-        <p className='heading text-6xl'>Enter Details</p>
+        <p className='heading text-3xl gridular'>Enter Details</p>
 
         <form onSubmit={handleSubmit}>
             <input type="text" name="full_name" placeholder="Full Name" value={full_name} onChange={handleInputChange}required/><br />
@@ -42,7 +42,7 @@ const EventForm = () => {
             <input type="text" name="contact" placeholder="Contact" value={contact} onChange={handleInputChange} required /><br />
             <input type="password" name="password" placeholder="Password" value={password} onChange={handleInputChange} required /><br />
             <input type="password" name="confirm_password" placeholder="Confirm Password" value={confirm_password} onChange={handleInputChange} required /><br />
-            <button className='event w-[60%] rounded-full py-3 text-2xl transition delay-150 duration-300 ease-in-out bg-gradient-to-r from-blue-500 to-violet-900  hover:from-violet-900 hover:to-blue-500 ' type="submit">Register</button><br />
+            <button className='event w-[60%] rounded-full py-2 mt-[20px] text-xl transition delay-150 duration-300 ease-in-out bg-gradient-to-r from-blue-500 to-violet-900  hover:from-violet-900 hover:to-blue-500 ' type="submit">Register</button><br />
     
         </form>
         </div>

@@ -50,3 +50,7 @@
       -webkit-background-clip: text; /* For Safari/Chrome */
       color: transparent;
   }
+
+  @media (max-width: 767px) {
+   
+  }

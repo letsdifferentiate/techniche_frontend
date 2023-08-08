@@ -44,8 +44,8 @@ const LoginForm = () => {
 
   return (
     <div className='parent relative'>
-        <img src={leftHand} className='fixed left-0 top-0 h-[60vh] '/>
-        <img src={rightHand} className='fixed right-0 bottom-0 h-[60vh] '/>
+        <img src={leftHand} className='hover fixed left-0 top-0 h-[60vh] '/>
+        <img src={rightHand} className='hover fixed right-0 bottom-0 h-[60vh] '/>
         <img src={plus} className='fixed my-auto left-2'/>
         <img src={plus} className='fixed my-auto right-2'/>
 

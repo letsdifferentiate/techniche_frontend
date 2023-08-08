@@ -17,73 +17,79 @@
     
 }
 
+.ellipse{
+  height: 100vw;
+  width: 100vw;
+ 
+}
 
-
+/* 
 .T1:hover::before {
-    content: "25_YEARS";
+    content: "TECHNOLOGY";
     color:red;
-    /* display: block; */
+
+  }
+  .T1:hover{
+    color:transparent;
   }
   .E1:hover{
     color:transparent;
   }
   .E1:hover::before {
-    content: "25_YEARS";
+    content: "EXPLORATION";
     color:red;
-    /* display: block; */
+    
   }
-  .T1:hover{
-    color:transparent;
-  }
+ 
 
   .C1:hover::before {
-    content: " ";
+    content: " CURIOSITY";
     color:red;
-    /* display: block; */
+    
   }
   .C1:hover{
     
     color:transparent;
   }
   .H1:hover::before {
-    content: "25_YEARS";
+    content: " 25_YEARS";
     color:red;
-    /* display: block; */
+    
   }
   .H1:hover{
     color:transparent;
   }
   .N1:hover::before {
-    content: "25_YEARS";
+    content: " 25_YEARS";
     color:red;
-    /* display: block; */
+    
   }
   .N1:hover{
     color:transparent;
   }
 
   .I1:hover::before {
-    content: "25_YEARS";
+    content: " 25_YEARS";
     color:red;
-    /* display: block; */
+    
   }
   .I1:hover{
     color:transparent;
   }
 
   .C2:hover::before {
-    content: "25_YEARS";
+    content: " 25_YEARS";
     color:red;
-    /* display: block; */
+    
   }
   .C2:hover{
     color:transparent;
   }
 
   .H2:hover::before {
-    content: "25_YEARS";
+    content: " 25_YEARS";
     color:red;
-    /* display: block; */
+    
   }
   .H2:hover{
     color:transparent;
@@ -92,11 +98,11 @@
   .E2:hover::before {
     content: " ";
     color:red;
-    /* display: block; */
+    
   }
   .E2:hover{
     color:transparent;
-  }
+  } */
 
 .mori_to_grid{
     font-family: 'PP_Mori';

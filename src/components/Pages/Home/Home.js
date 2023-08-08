@@ -76,41 +76,40 @@ const handleVideoClick = () => {
     <Logo />
 
 
-      <div className='text-white mt-40 w-[90vw] h-[50vh] mx-auto relative flex justify-between items-center'>
-       <img src={sidebar} />
-        <div className=' w-[45vw] relative my-auto h-[50vh] flex flex-col items-center justify-center'>
+      <div className='text-white md:mt-40 w-[90vw] h-[50vh] mx-auto relative flex justify-between items-center'>
+       <img src={sidebar} className='hover hidden md:block'/>
+        <div className=' w-[45vw] relative my-auto h-[30vh] md:h-[50vh] flex flex-col items-center justify-center'>
            <div className='absolute top-0 left-0 text-lg'>SINCE 1999</div>
            <div></div>
-           <img src={Ellipse} className='absolute w-[90%]' />
+           <img src={Ellipse} className='ellipse absolute hover w-[100vw]' />
            
-          <div className='relative'>
-              <div className='text-8xl text-white flex'>
-                  <div className='mori_to_grid text-blue-800 T1'>T</div>
-                  <div className='grid_to_mori text-violet-800 E1'>E</div>
-                  <div className='mori_to_grid text-blue-500 C1'>C</div>
-                  <div className='grid_to_mori  H1'>H</div>
-                  <div className='mori_to_grid N1'>N</div>
-                  <div className='mori_to_grid I1'>I</div>
-                  <div className='grid_to_mori C2'>C</div>
-                  <div className='mori_to_grid H2'>H</div>
-                  <div className='mori_to_grid E2'>E</div>
-              </div>
-            </div>
-            <div className='absolute right-0 bottom-10 flex  flex-col justify-end'>
-                    
+           <div className='relative mx-auto'>
+  <div className='text-6xl md:text-8xl text-white flex mx-auto'>
+    <div className='mori_to_grid T1' style={{ background: 'linear-gradient(to bottom, blue, white)', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>T</div>
+    <div className='grid_to_mori E1' style={{ background: 'linear-gradient(to bottom, blue, white)', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>E</div>
+    <div className='mori_to_grid C1' style={{ background: 'linear-gradient(to bottom, blue, white)', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>C</div>
+    <div className='grid_to_mori H1' style={{ background: 'linear-gradient(to bottom, blue, white)', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>H</div>
+    <div className='mori_to_grid N1' style={{ background: 'linear-gradient(to bottom, blue, white)', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>N</div>
+    <div className='mori_to_grid I1' style={{ background: 'linear-gradient(to bottom, blue, white)', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>I</div>
+    <div className='grid_to_mori C2' style={{ background: 'linear-gradient(to bottom, blue, white)', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>C</div>
+    <div className='mori_to_grid H2' style={{ background: 'linear-gradient(to bottom, blue, white)', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>H</div>
+    <div className='mori_to_grid E2' style={{ background: 'linear-gradient(to bottom, blue, white)', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>E</div>
+  </div>
+</div>
+
+            <div className='absolute right-0 bottom-0 md:bottom-10 flex  flex-col justify-end'>
                     <div className='fontx text-3xl'>31st Aug-3rd Sept</div>
             </div>
             
         </div>
-        <div className='w-[20vw] text-black'></div>
-        <img src={sidebar} />
-    
+        <div className='w-0 md:w-[20vw]'></div>
+        <img src={sidebar} className='hover hidden md:block'/>
       </div>
 
       <a href="https://www.google.com/maps/d/u/0/viewer?mid=10kOD2TXBPY1qsMQfdF8AXlBxS0Q&hl=en_US&ll=26.19210399999995%2C91.69464100000002&z=17" className='text-white'>
-          <div className='mt-9 w-[80vw] h-auto rounded-full border-1 border white mx-auto flex justify-between relative z-1'>
+          <div className='mt-9 w-[95vw] md:w-[80vw] h-auto rounded-full border-1 border white mx-auto flex justify-between relative z-1'>
             <div className='m-2 ml-7 flex'>
-                <div className='w-[10vh] h-[10vh]'>
+                <div className='h-[7vh] w-[7vh] md:w-[10vh] md:h-[10vh]'>
                 <video id="videoPlayer" loop autoPlay muted>
                       <source src={globe} type="video/mp4" />
                 </video>
@@ -118,15 +117,18 @@ const handleVideoClick = () => {
                 <div className='text-white my-auto ml-3'>THE 25TH EDITION <br/>26°11′14″N,  91°41′30″E</div>
             </div>
             <div className='flex'>
-                <div className='text-white my-auto'>The Annual Techno-Management festival of Indian Institute of Technology (IIT), Guwahati. <br/> This year we bring to you the 25th Edition.</div>
-                <img src={flower} className='w-[8vh] h-[8vh] mx-4 my-auto animate-spin'/></div>
+                <div className='text-white my-auto hidden md:block'>The Annual Techno-Management festival of Indian Institute of Technology (IIT), Guwahati. <br/> This year we bring to you the 25th Edition.</div>
+                <img src={flower} className='w-[7vh] h-[7vh] mx-4 my-auto animate-spin'/></div>
           </div>
+
       </a>
+      <div className='text-white mt-[20px] text-center md:hidden'>The Annual Techno-Management festival of Indian Institute of Technology (IIT), Guwahati. <br/> This year we bring to you the 25th Edition.</div>
 
 
-      <div className='w-[80vw]  mx-auto my-20 h-[90vh] relative z-20' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      <div className='w-[80vw]  mx-auto my-10 md:my-20 md:h-[90vh] relative z-20' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <div id="playPauseBtn" className={isHovering ? 'cursor': ''} style={{ top: cursorPosition.y, left: cursorPosition.x }} >
         {mouseContent}
+
       </div>
       <video id="video" loop autoPlay muted className='h-[100%] w-[100%]' onClick={handleVideoClick}>
                       <source src={video} type="video/mp4" />

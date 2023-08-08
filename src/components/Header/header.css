@@ -1,64 +1,167 @@
 @font-face {
-    font-family: 'PP_Mori';
-    src: url('../fonts/PPMori-Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'PP_Mori';
+  src: url('../fonts/PPMori-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 body{
-  margin: 0;
+margin: 0;
 }
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 10px;
-    background-color: black;
-    padding-top: 2vh;
-  }
-  
-  .navbar-logo img {
-    height: 40px;
-  }
-  
-  .navbar-links {
-    list-style-type: none;
-    margin: 0 0 0 30px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .navbar-links li {
-    margin: 0 10px;
-  }
-  
-  .navbar-links a {
-    text-decoration: none;
-    color: white;
-    font-family: 'PP_Mori';
-    margin-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  background-color: hwb(0 1% 98%);
+  padding-top: 2vh;
+}
 
-  }
-  
-  .navbar-auth a {
-    text-decoration: none;
-    color: white;
-    margin-left: 10px;
-    font-family: 'PP_Mori';
-  }
-  
+.navbar-logo img {
+  height: 40px;
+}
 
-  .register-button{
-    color:white;
-    background-color: black;
-    border: 1px solid;
-    border-radius: 20px;
-    padding: 10px 30px;
-    margin-left: 10px;
-   
-   
-    margin-right: 20px;
-  }
+.navbar-links {
+  list-style-type: none;
+  margin: 0 0 0 30px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-links li {
+  margin: 0 10px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-family: 'PP_Mori';
+  margin-right: 40px;
+
+}
+
+.navbar-auth a {
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+  font-family: 'PP_Mori';
+}
 
 
+.register-button{
+  color:white;
+  background-color: black;
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 10px 30px;
+  margin-left: 10px;
+ 
+ 
+  margin-right: 20px;
+}
+
+
+/* Your existing styles for the header */
+
+/* Media query for small screens to show hamburger menu */
+/* Your existing styles for the header */
+
+.navbar {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px;
+background-color: hwb(0 5% 95%);
+}
+
+.navbar-logo img {
+width: 80px; /* Adjust the logo size as needed */
+}
+
+.navbar-links {
+display: flex;
+align-items: center;
+}
+
+.navbar-links ul {
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.navbar-links ul li {
+margin-right: 20px;
+}
+
+.navbar-auth {
+display: flex;
+align-items: center;
+}
+
+.navbar-auth a {
+color: #fff;
+text-decoration: none;
+margin-right: 20px;
+}
+
+.register-button {
+background-color: #fff;
+color: #333;
+padding: 8px 16px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+/* Hamburger menu styles */
+.hamburger-menu {
+display: none;
+cursor: pointer;
+}
+
+.hamburger-menu .line {
+width: 25px;
+height: 3px;
+background-color: #fff;
+margin: 5px;
+}
+
+/* Media query for small screens to show hamburger menu */
+@media (max-width: 768px) {
+
+.navbar {
+  background-color: rgb(15, 14, 14); /* Change background color to red */
+}
+
+.navbar-links {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 60px; /* Adjust the distance from the top as needed */
+  left: 0;
+  background-color: hsl(0, 0%, 2%);
+  width: 100vw;
+  height: 100vh;
+  font-size: 30px;
   
+  
+ 
+  
+}
+
+.navbar-links.show {
+  display: flex;
+}
+
+.navbar-auth {
+  display: none;
+}
+
+.hamburger-menu {
+  display: block;
+}
+}
+
+
