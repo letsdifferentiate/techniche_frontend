@@ -1,0 +1,65 @@
+import React, { useEffect, useState } from 'react';
+import './header.css';
+import logo from './logo.svg';
+import { Link } from 'react-router-dom';
+
+function Header() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  useEffect(() => {
+    const closeMobileMenu = () => {
+      if (window.innerWidth > 768 && mobileMenuOpen) {
+        setMobileMenuOpen(false);
+      }
+    };
+
+    window.addEventListener('resize', closeMobileMenu);
+
+    return () => {
+      window.removeEventListener('resize', closeMobileMenu);
+    };
+  }, [mobileMenuOpen]);
+
+  return (
+    <div className="fixed top-0 w-[100vw] z-50">
+      <nav className="navbar">
+        <div className="navbar-logo">
+          <Link to="/">
+            <img src={logo} alt="Logo" />
+          </Link>
+        </div>
+        <ul className={`navbar-links ${mobileMenuOpen ? 'mobile-menu-open' : ''}`}>
+          <li id="events">
+            <Link to="/events/technical">{eventsText}</Link>
+          </li>
+          <li id="competitions">
+            <Link to="/competitions/technical">{competitionText}</Link>
+          </li>
+          <li id="workshops">
+            <Link to="/workshops">{workshopsText}</Link>
+          </li>
+          <li id="ambassador">
+            <Link to="/pr_intern">{ambassadorText}</Link>
+          </li>
+        </ul>
+        <div className="navbar-auth">
+          <Link to="/login">Login/SignUp</Link>
+          <Link to="/signup">
+            <button className="register-button">Register</button>
+          </Link>
+        </div>
+        <div className="hamburger-menu" onClick={toggleMobileMenu}>
+          <div className={`bar ${mobileMenuOpen ? 'bar-open' : ''}`}></div>
+          <div className={`bar ${mobileMenuOpen ? 'bar-open' : ''}`}></div>
+          <div className={`bar ${mobileMenuOpen ? 'bar-open' : ''}`}></div>
+        </div>
+      </nav>
+    </div>
+  );
+}
+
+export default Header;

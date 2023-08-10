@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Roslindale';
+    src: url('../../../fonts/Roslindale-DeckNarrowRegular-Testing.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PP_Mori';
+    src: url('../../../fonts/PPMori-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.event_name{
+    font-family: 'Roslindale';
+}
+
+p{
+    font-family: 'PP_Mori';
+}

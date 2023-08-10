@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'PP_Mori';
+  src: url('../../fonts/PPMori-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roslindale';
+  src: url('../../fonts/Roslindale-DeckNarrowRegular-Testing.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+  }
+.heading{
+  font-family: 'Roslindale';
+  margin-bottom: 30px;
+}
+.login-form {
+  text-align: center;
+  padding: 40px;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 25px;
+  width: 80vh;
+  height: auto;
+  color:white;
+  position: relative;
+  background-color: rgba(19, 17, 17, 0.16);
+  backdrop-filter: blur(3.5px); /* Blur effect */
+}
+
+.login-form h1{
+  margin-top: 7vh;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 60%;
+  font-family: "PP_Mori";
+  padding: 10px;
+
+  border: none;
+  border-bottom: 1px solid white;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0);
+  
+  color:white;
+}
+
+.loginx {
+  width: 60%;
+  padding: 10px;
+  
+  color: white;
+  border: none;
+  border-radius: 25px;
+  margin: 2vh 0 0vh 0;
+  cursor: pointer;
+  font-family: "PP_Mori";
+}
+
+
+.signup{
+  width: 60%;
+  padding: 10px;
+  background: grey;
+  color: white;
+  border: none;
+  border: 1px solid white;
+  margin: 0 0 2vh 0;
+  border-radius: 25px;
+  margin-bottom: 2vh;
+  cursor: pointer;
+  font-family: "PP_Mori";
+}
+
+
+.login-form a {
+  font-family: "PP_Mori";
+  text-decoration: none;
+  color: white;
+}
+
+.forgot-password{
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-family: 'PP_Mori';
+  position: absolute;
+  right: 22%;
+}
+
+.hover {
+  animation: translateAnimation 4s linear infinite alternate; /* Change '5s' to adjust the animation duration */
+}
+
+@keyframes translateAnimation {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-5%, -5%); /* Change '-50%' to adjust the distance of horizontal and vertical translation */
+  }
+}
+
+
+
+@media (max-width: 767px) {
+ .login-form{
+  margin: auto;
+  width: 85vw;
+  background-color: rgba(18, 13, 13, 0.16);
+  backdrop-filter: blur(10px); /* Blur effect */
+ }
+ .login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 90%;
+}
+.loginx{
+  width: 90%;
+}
+.signup{
+  width: 90%;
+}
+}

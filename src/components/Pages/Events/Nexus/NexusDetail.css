@@ -1,0 +1,217 @@
+
+@font-face {
+    font-family: 'PP_Mori';
+    src: url('../../../fonts/PPMori-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gridular';
+    src: url('../../../fonts/Gridular-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.event_change {
+
+    height: 10vh;
+    width: inherit;
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.gridular{
+    color: #FFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.50);
+    font-family: Gridular;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+.pp_mori{
+    color: #FFF;
+    font-family: 'PP_Mori';
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+     margin-top: 20px;
+}
+.img1 img{
+    width: 60px;
+height: 64px;
+flex-shrink: 0;
+margin-top: 20px;
+}
+
+.img2 img{
+    width: 60px;
+    height: 64px;
+    flex-shrink: 0;
+    margin-top: 20px;
+}
+
+.title {
+    color: #FFF;
+    text-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.50);
+    font-family:'PP_Mori';
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.content {
+    margin-top: 5vh;
+    
+    
+    /* position: relative; */
+    border:white solid 2px;
+    border-radius: 25px;
+    padding:5vh;
+    /* background-color: rgba(255, 255, 255, 0.16); */
+      backdrop-filter: blur(4px); /* Blur effect */
+}
+#content{
+    background: url("./images/Slice\ 1.png");
+    height: 100vh;
+}
+
+.events-navbar{
+    margin-bottom: 5vh;
+}
+.events-navbar-list {
+    background-color:transparent;
+      backdrop-filter: blur(3.5px); /* Blur effect */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.events-navbar-item {
+    display: inline-block;
+    background-color: transparent;
+      backdrop-filter: blur(3.5px); /* Blur effect */
+    margin-right: 25px;
+}
+
+.events-navbar-item a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    background-color:transparent;
+    backdrop-filter: blur(3.5px); /* Blur effect */;
+    font-family: 'PP_Mori';
+    font-size: 26px;
+    line-height: 38px;
+    letter-spacing: 0.0025em;
+    text-align: left;
+
+}
+
+
+
+.active{
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-image-source: linear-gradient(to left, #040406, #2685D5 40%);
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    
+}
+
+.events-navbar-item a:hover {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-image-source: linear-gradient(to left, #040406, #2685D5);
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    font-weight: 800;
+    transition: 0.2s ease-in-out;
+}
+
+
+.text {
+    
+
+    background-color: transparent;
+      backdrop-filter: blur(3.5px); /* Blur effect */
+    font-family:'PP_Mori';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.01em;
+    text-align: left;
+
+}
+.text-parent{
+    overflow-y: scroll;
+    background-color: transparent;
+      backdrop-filter: blur(3.5px); /* Blur effect */
+    height: auto;
+}
+
+.text-parent::-webkit-scrollbar {
+    width: 0.3em;
+}
+
+.text-parent::-webkit-scrollbar-track {
+    background-color: rgb(48, 46, 46);
+}
+
+.text-parent::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+.button {
+    position: absolute;
+    right: 100px;
+    bottom:30px;
+    padding:10px 20px;
+    border:none;
+    font-size: 15px;
+    width: 150px;
+    color:white;
+    background: linear-gradient(to left, #402489, #2685D5);
+    border-radius: 30px;
+}
+
+@media (max-width: 767px) {
+    .gridular{
+        font-size: 40px;
+        
+    }
+    .pp_mori{
+        font-size: 40px;
+    }
+    .img1 img{
+        width: 30px;
+        height: 30px;
+        
+    }
+    .img2 img{
+        width: 30px;
+        height: 30px;
+    }
+    .events-navbar-item{
+        margin-right: 10px;
+    }
+    .content{
+        backdrop-filter: blur(0px); /* Blur effect */
+    }
+}

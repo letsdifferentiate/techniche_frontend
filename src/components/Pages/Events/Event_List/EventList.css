@@ -1,0 +1,37 @@
+body{
+    background-color: black;
+}
+@font-face {
+    font-family: 'Roslindale';
+    src: url('../../../fonts/Roslindale-DeckNarrowRegular-Testing.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PP_Mori';
+    src: url('../../../fonts/PPMori-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gridular';
+    src: url('../../../fonts/Gridular-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.select-event{
+    font-family: 'Roslindale';
+}
+.textx{
+    font-family: 'PP_Mori';
+}
+.heading{
+    font-family: 'PP_Mori';
+}
+
+.heading p{
+    font-family: 'Gridular';
+    margin-top: -5px;
+}
+

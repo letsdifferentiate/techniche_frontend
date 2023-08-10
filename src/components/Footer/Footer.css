@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Roslindale';
+    src: url('../fonts/Roslindale-DeckNarrowRegular-Testing.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.roslindale{
+    font-family: 'Roslindale';
+}
+
+.footer{
+    background:linear-gradient(141deg, #151E4B 9.31%, rgba(83, 31, 53, 0.60) 100%, rgba(255, 255, 255, 0.00) 100%);
+    backdrop-filter: blur(12.5px);
+}

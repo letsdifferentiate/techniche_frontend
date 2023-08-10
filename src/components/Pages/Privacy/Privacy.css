@@ -1,0 +1,135 @@
+
+.ok{
+    text-decoration: underline;
+}
+.page-content{
+    color: azure;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.heading{
+    text-align: center;
+}
+.p{
+  margin-bottom: 15px !important;
+}
+
+blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
+  margin: 15px !important;
+}
+.trending{
+    position: absolute;
+    z-index: 50;
+    color:#7bbaf9;
+  }
+  #BG {
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  @media screen and (max-width: 800px){
+    .covid {
+      font-size: 1.1rem;
+      margin: 2.5rem;
+    }
+
+  }
+  @media screen and (max-width: 576px){
+    .hidden-desktop{
+      display: none;
+    }
+    .covid {
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin: 1.3rem;
+    }
+
+  }
+  
+  @media screen and (min-width: 800px) {
+    .hidden-desktop{
+      display: none;
+    }
+    .covid {
+      opacity: 0.8;
+      font-size: 1.1rem;
+      letter-spacing: 1.5px;
+      font-weight: 400;
+      margin-left: 11rem;
+      margin-top: 2.8rem;
+      transition: opacity 0.5s ease; 
+
+    }
+    .covid:hover {
+      opacity: 1.0;
+    }
+  }
+
+  .lightbgcolor{
+    background-color: #ffffff;
+  }
+  .pr-button {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    transition:  all 0.5s ease;
+  }
+  .pr-button:hover {
+    transform: scale(1.1);
+    opacity: 1.0;
+  }
+  sup {
+    color: #FA9C29;
+  font-family: SF Pro Display;
+  }
+
+
+
+  .sidenav {
+      position: absolute !important;
+      z-index: 1;
+  }
+
+  .page-content {
+      position: relative;
+  }
+
+  .pt-changed {
+      min-height: 20vh;
+  }
+
+  .pt-events {
+      color: white;
+      padding-bottom: 50px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      align-items: center;
+      text-align: justify;
+      transform: translateY(-50%);
+  }
+
+  #fixed-content>* {
+      position: absolute !important;
+  }
+
+  #fixed-content.open>* {
+      position: fixed !important;
+
+  }
+
+  .social-icons {
+      text-align: right;
+      right: 0;
+      padding-right: 20px;
+      position: absolute;
+      top: 50%;
+      transform: translate(0%, -50%);
+  }
+
+  .page-content.open {
+      transform: translate(-120%, 0%);
+      opacity: 0.85;
+      -webkit-transition: -webkit-transform 0.5s, opacity 0.25s;
+      transition: transform 0.5s, opacity 0.5s;
+  }
