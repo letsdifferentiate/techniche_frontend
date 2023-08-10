@@ -40,8 +40,8 @@ const SignUpForm = () => {
         <img src={rightHand} className='fixed right-0 bottom-0 h-[60vh] '/>
         <img src={plus} className='fixed my-auto left-2'/>
         <img src={plus} className='fixed my-auto right-2'/>
-        <div className="signup-form">
-        <p className='heading text-6xl'>Create an account</p>
+        <div className="signup-form ml-5 mr-5 mb-10 lg:mt-24 lg:mb-10">
+        <p className='heading text-4xl'>Create an account</p>
 
         <form onSubmit={handleSubmit}>
             <input type="text" name="full_name" placeholder="Full Name" value={full_name} onChange={handleInputChange}required/><br />
@@ -59,3 +59,4 @@ const SignUpForm = () => {
 }
 
 export default SignUpForm;
+

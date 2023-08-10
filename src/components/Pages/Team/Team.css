@@ -8,3 +8,11 @@
 .Gridular{
     font-family: 'Gridular';
 }
+
+.block {
+    display: block;
+}
+  
+.hidden {
+    display: none;
+}

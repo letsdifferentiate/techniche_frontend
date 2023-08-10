@@ -5,11 +5,148 @@
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'PP_Mori';
+  src: url('../fonts/PPMori-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Footer.css */
+/* Footer.css */
+
+.left-align {
+  margin-left: 5px; /* Add margin to the left for spacing */
+}
+.loc {
+  width: 20px; /* Adjust the width as needed */
+  height: 20px; 
+  display: inline-block;/* Adjust the height as needed */
+}
+.image-container {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+/* Style for the image text */
+.image-text {
+  margin-left: 5px; /* Adjust the spacing between image and text */
+  display: inline-block;
+}
+
+/* Rest of your styles */
+
+/* Footer.css */
+
+
+
+
+
+
+
+/* Existing styles */
+@media (max-width: 768px) {
+  .centered-content {
+    justify-content: flex-end; /* Align content to the bottom */
+    height: auto; /* Remove fixed height */
+    padding: 55px; /* Add padding for spacing */
+  }
+}
+.pp_mori{
+  font-family: "PP_Mori";
+}
+
+.roslindale {
+  margin-bottom: 10px; /* Adjust this value as needed */
+
+}
+.flex {
+  margin-bottom: 20px; /* Adjust this value as needed */
+}
+
+
+/* Other existing styles */
+
+.centered-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute content evenly */
+  }
+  .border border-white relative{
+    position: absolute;
+  }
+ 
+  
+  /* ... Other styles */
+  
+  
 .roslindale{
     font-family: 'Roslindale';
 }
-
+.flex a {
+    margin-bottom: 11px; /* Adjust this value as needed to increase the space */
+  }
 .footer{
     background:linear-gradient(141deg, #151E4B 9.31%, rgba(83, 31, 53, 0.60) 100%, rgba(255, 255, 255, 0.00) 100%);
     backdrop-filter: blur(12.5px);
 }
+/* Footer.css */
+
+.meet-team-button {
+    color: white;
+    text-decoration: none;
+    /* background-color: #007bff; You can adjust the color as needed */
+    border: 2px solid white; /* Red border */
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    
+  }
+  .meet-team-button:hover {
+    background:linear-gradient(141deg, #151E4B 9.31%, rgba(83, 31, 53, 0.60) 100%, rgba(255, 255, 255, 0.00) 100%);
+  }
+  
+  .arrow-icon {
+    margin-left: 5px;
+    margin-top: 2px; /* Add space between the text and the arrow */
+  }
+  /* Footer.css */
+/* Footer.css */
+
+.scroll-up-button {
+    /* background-color: #007bff; Button background color */
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    border: 2px solid white; /* Red border */
+    /* font-weight: bold; */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 20px; /* Adjust the distance from the bottom */
+    right: 20px; /* Adjust the distance from the right */
+  }
+  @media (max-width: 768px) {
+    .scroll-up-button {
+      bottom: 51px; /* Adjust the distance from the bottom */
+    right: 20px; /* Adjust the distance from the right */
+    }
+  }
+  
+  .scroll-up-button:hover {
+    background:linear-gradient(141deg, #151E4B 9.31%, rgba(83, 31, 53, 0.60) 100%, rgba(255, 255, 255, 0.00) 100%);
+  }
+  
+  .scroll-up-button span {
+    margin-left: 5px;
+  }
+  .center-image {
+    display: block;
+    margin: 0 auto; /* Horizontally center the image */
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px; /* Add space between the text and the image */
+  }

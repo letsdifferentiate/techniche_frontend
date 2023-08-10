@@ -1,147 +1,174 @@
 @font-face {
-    font-family: 'Roslindale';
-    src: url('../../fonts/Roslindale-DeckNarrowRegular-Testing.otf') format('opentype');
-    font-weight: 900;
-    font-style: normal;
+  font-family: 'Roslindale';
+  src: url('../../fonts/Roslindale-DeckNarrowRegular-Testing.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'PP_Mori';
-    src: url('../../fonts/PPMori-Regular.otf') format('opentype');
-    font-weight: 700;
-    font-style: normal;
+  font-family: 'PP_Mori';
+  src: url('../../fonts/PPMori-Regular.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
 }
 
 .fontx{
-    font-family: 'Roslindale';
-    
+  font-family: 'Roslindale';
+  
 }
 
 .ellipse{
-  height: 100vw;
-  width: 100vw;
- 
+height: 20vw;
+width: 20vw;
+}
+
+@media (max-width: 768px) {
+
+.ellipse {
+  height: 30vw;
+  width: 50vw;
+  margin-top: 5vh;
+}
+
+.ellipse-rotate {
+  transform: rotate(75deg);
+}
+
+.date-text {
+  margin-left: 0vh;
+  margin-top: 30vh;
+}
+
+.mobile-text {
+  margin-top: 2rem;
+  margin-right: -10rem;
+  margin-bottom: 0.5rem;
+}
+}
+
+.mobile-text {
+margin-left: -22rem;
 }
 
 /* 
 .T1:hover::before {
-    content: "TECHNOLOGY";
-    color:red;
+  content: "TECHNOLOGY";
+  color:red;
 
-  }
-  .T1:hover{
-    color:transparent;
-  }
-  .E1:hover{
-    color:transparent;
-  }
-  .E1:hover::before {
-    content: "EXPLORATION";
-    color:red;
-    
-  }
- 
+}
+.T1:hover{
+  color:transparent;
+}
+.E1:hover{
+  color:transparent;
+}
+.E1:hover::before {
+  content: "EXPLORATION";
+  color:red;
+  
+}
 
-  .C1:hover::before {
-    content: " CURIOSITY";
-    color:red;
-    
-  }
-  .C1:hover{
-    
-    color:transparent;
-  }
-  .H1:hover::before {
-    content: " 25_YEARS";
-    color:red;
-    
-  }
-  .H1:hover{
-    color:transparent;
-  }
-  .N1:hover::before {
-    content: " 25_YEARS";
-    color:red;
-    
-  }
-  .N1:hover{
-    color:transparent;
-  }
 
-  .I1:hover::before {
-    content: " 25_YEARS";
-    color:red;
-    
-  }
-  .I1:hover{
-    color:transparent;
-  }
+.C1:hover::before {
+  content: " CURIOSITY";
+  color:red;
+  
+}
+.C1:hover{
+  
+  color:transparent;
+}
+.H1:hover::before {
+  content: " 25_YEARS";
+  color:red;
+  
+}
+.H1:hover{
+  color:transparent;
+}
+.N1:hover::before {
+  content: " 25_YEARS";
+  color:red;
+  
+}
+.N1:hover{
+  color:transparent;
+}
 
-  .C2:hover::before {
-    content: " 25_YEARS";
-    color:red;
-    
-  }
-  .C2:hover{
-    color:transparent;
-  }
+.I1:hover::before {
+  content: " 25_YEARS";
+  color:red;
+  
+}
+.I1:hover{
+  color:transparent;
+}
 
-  .H2:hover::before {
-    content: " 25_YEARS";
-    color:red;
-    
-  }
-  .H2:hover{
-    color:transparent;
-  }
+.C2:hover::before {
+  content: " 25_YEARS";
+  color:red;
+  
+}
+.C2:hover{
+  color:transparent;
+}
 
-  .E2:hover::before {
-    content: " ";
-    color:red;
-    
-  }
-  .E2:hover{
-    color:transparent;
-  } */
+.H2:hover::before {
+  content: " 25_YEARS";
+  color:red;
+  
+}
+.H2:hover{
+  color:transparent;
+}
+
+.E2:hover::before {
+  content: " ";
+  color:red;
+  
+}
+.E2:hover{
+  color:transparent;
+} */
 
 .mori_to_grid{
-    font-family: 'PP_Mori';
-    transition: font-family 0.3s ease 0.2s, font-size 0.3s ease 0.2s;
-    margin-top: 0;
-    font-weight: 500;
+  font-family: 'PP_Mori';
+  transition: font-family 0.3s ease 0.2s, font-size 0.3s ease 0.2s;
+  margin-top: 0;
+  font-weight: 500;
 }
 .mori_to_grid:hover{
-    font-family: 'Gridular';
-    margin-top: -9px;
+  font-family: 'Gridular';
+  margin-top: -9px;
 }
 
 .grid_to_mori{
-    margin-top: -9px;
-    font-family: 'Gridular';
-    transition: font-family 0.3s ease 0.2s, font-size 0.3s ease 0.2s;
+  margin-top: -9px;
+  font-family: 'Gridular';
+  transition: font-family 0.3s ease 0.2s, font-size 0.3s ease 0.2s;
 }
 .grid_to_mori:hover{
-    font-family: 'PP_Mori';
-    margin-top: 0;
+  font-family: 'PP_Mori';
+  margin-top: 0;
 }
 
 
 
 
 .cursor {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: transparent;
-  box-shadow: 0 0 40px rgba(59, 150, 255, 0.7); 
-  backdrop-filter: blur(12px); 
-  color: #ffffff;
-  font-size: 16px;
-  pointer-events: none; /* Prevent the cursor div from interfering with underlying elements */
-  z-index: 9999; /* Ensure it stays on top of other elements */
-  opacity: 0.8;
+position: fixed;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+background-color: transparent;
+box-shadow: 0 0 40px rgba(59, 150, 255, 0.7); 
+backdrop-filter: blur(12px); 
+color: #ffffff;
+font-size: 16px;
+pointer-events: none; /* Prevent the cursor div from interfering with underlying elements */
+z-index: 9999; /* Ensure it stays on top of other elements */
+opacity: 0.8;
 }

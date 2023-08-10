@@ -50,7 +50,7 @@ const LoginForm = () => {
         <img src={plus} className='fixed my-auto right-2'/>
 
 
-        <div className="login-form">
+        <div className="login-form mt-30 md:mt-20">
         <p className='heading text-6xl'>Welcome Back!</p>
         <form onSubmit={handleSubmit}>
             <input
@@ -69,10 +69,10 @@ const LoginForm = () => {
             onChange={handleInputChange}
             required
             /><br />
-            <a href="#" className='forgot-password'>Forgot password?</a><br />
+            <a href="#" className='forgot-password mx-310'>Forgot password?</a><br />
             <button type="submit" className='loginx  bg-gradient-to-r from-blue-500 to-violet-900' onClick={handleSubmit}>Login</button><br />
             
-            <a href="#"><button className='w-[60%] p-2 mt-6 rounded-full bg-transparent border-2 border-gray-400 mb-3'>Not a member? Signup</button></a>
+            <a href="#"><button className='w-[60%] p-3 mt-6 rounded-full bg-transparent border-2 border-gray-400'>Not a member? Signup</button></a>
         </form>
         </div>
     </div>
